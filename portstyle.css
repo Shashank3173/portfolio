@@ -251,3 +251,102 @@ textarea {
 .resume a:hover {
     background-color: #00cccc;
 }
+
+/* Media Queries for Responsiveness */
+
+/* For smaller screens (Tablets and below) */
+@media (max-width: 1024px) {
+    nav {
+        gap: 30px;
+    }
+
+    .main > section {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 30px;
+    }
+
+    .primary-heading {
+        font-size: 3rem;
+    }
+
+    .about-text {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .service, .project {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 200px;
+        height: 200px;
+    }
+
+    .contact-inner {
+        flex-direction: column;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    .resume a {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
+
+/* For smaller screens (Mobile Devices) */
+@media (max-width: 768px) {
+    nav {
+        gap: 20px;
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    nav a {
+        font-size: 1.2rem;
+    }
+
+    .main > section {
+        flex-direction: column;
+        text-align: center;
+        row-gap: 20px;
+    }
+
+    .primary-heading {
+        font-size: 2.5rem;
+    }
+
+    .profile-pic, .about-image {
+        width: 200px;
+        height: 200px;
+    }
+
+    .about-text {
+        font-size: 1rem;
+    }
+
+    .card {
+        width: 150px;
+        height: 150px;
+        padding: 15px;
+    }
+
+    .resume h2 {
+        font-size: 2rem;
+    }
+
+    .resume a {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    form {
+        width: 80%;
+    }
+}
